@@ -10,7 +10,9 @@ body {
 .wrapper {
   width: 850px;
   max-width: 100vw;
+  min-height: 100vh;
   padding: 0 1rem;
+  position: relative;
 }
 
 header {
@@ -36,4 +38,19 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+footer a {
+  margin: 0 1rem;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+footer a:hover {
+  color: #ececec;
+  text-decoration: underline;
 }
