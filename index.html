@@ -5,11 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>failbird.de</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="./src/reset.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-
-  <script src="src/main.js"></script>
+  <div class="wrapper">
+    <header>
+      <h1>failbird.de</h1>
+      <p>My Personal Testing Website</p>
+      <p><small>What are you doing here?</small></p>
+    </header>
+    <section>
+      <h2>Coding Exercises:</h2>
+      <div class="exercises-container">
+        <a href="./exercises/html/index.html" class="btn-push" style="--bg-c: #d93; --sh-c: #b71;">HTML</a>
+        <a href="./exercises/css/index.html"  class="btn-push" style="--bg-c: #48f; --sh-c: #26c;">CSS</a>
+        <a href="./exercises/js/index.html"   class="btn-push" style="--bg-c: #fd4; --sh-c: #ca2;">JavaScript</a>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

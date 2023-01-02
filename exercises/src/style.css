@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --font-mono: "Roboto Mono", 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #1b1b1b;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 120%;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 3rem auto;
+  grid-template-areas:
+    "nav nav"
+    "selection main";
+}
+
+nav {
+  background-color: #181818;
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav h1 {
+  background-image: linear-gradient(#29f, #08f);
+  background-clip: text;
+  color: transparent;
+}
+
+#exercises {
+  background-color: #191919;
+  grid-area: selection;
+}
+#exercises button {
+  padding: 1.25rem 1rem;
+  border-bottom: 2px solid #333;
+  font-size: 1.25rem;
+}
+#exercises button:first-of-type {
+  border-top: 2px solid #333;
+}
+
+main {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  grid-area: main;
+}
+#exercise-title {
+  margin-bottom: 0.75rem;
+}
+#exercise-description {
+  line-height: 1.5;
+}
+#exercise-description em {
+  padding: 0.125rem 0.25rem;
+  background-color: #fff2;
+  font-family: var(--font-mono);
+  font-style: normal;
+  color: #c8f;
+}
+#exercise-code {
+  margin: 1rem 0;
+  padding: 1.5rem 1rem;
+  background-color: #202020;
+  white-space: pre;
+  font-family: var(--font-mono);
+  line-height: 1.5;
+  display: block;
+}
+#exercise-code input {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+#exercise-info {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: #000;
+}
