@@ -175,6 +175,8 @@ const Exercises = {
         char greet[] = {};
 
         printf("%s", greet);
+
+        return 0;
       }`,
       solutions: ["\"Hello World!\""]},
 
@@ -185,6 +187,8 @@ const Exercises = {
         {} name[] = "Joe";
         {} age = 20;
         {} grade = 2.1;
+
+        return 0;
       }`,
       solutions: ["char", "char", "int", "float"]},
 
@@ -201,6 +205,8 @@ const Exercises = {
         printf("{}", name);
         printf("{}", age);
         printf("{}", grade);
+
+        return 0;
       }`,
       solutions: ["%c", "%s", "%d", "%f"]},
   ]
