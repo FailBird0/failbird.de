@@ -13,28 +13,32 @@ const Exercises = {
   ],
   css: [
     {name: "[CSS] Structuring", desc: "Create a declaration to change the <em>background-color</em> of the documents <em>body</em> to <em>#2299ff</em>.", code:
-`{} {
-  {}: {};
-}`, solutions: ["body", "background-color", "#2299ff"]},
+      `{} {
+        {}: {};
+      }`,
+      solutions: ["body", "background-color", "#2299ff"]},
 
     {name: "[CSS] Font", desc: "Change the <em>font</em> of the document.", code:
-`body {
-  font-{}: {};   /* Changes font family to "sans-serif" */
-  font-{}: {};         /* Changes font size to 1.5rem */
-  {}: #ccc;               /* Changes font color to #ccc */
-}`, solutions: ["family", "sans-serif", "size", "1.5rem", "color"]},
+      `body {
+        font-{}: {};   /* Changes font family to "sans-serif" */
+        font-{}: {};         /* Changes font size to 1.5rem */
+        {}: #ccc;               /* Changes font color to #ccc */
+      }`,
+      solutions: ["family", "sans-serif", "size", "1.5rem", "color"]},
 
     {name: "[CSS] Universal Selector", desc: "Use the <em>universal selector</em> to remove all <em>margin</em> and <em>padding</em> from all elements.", code:
-`{} {
-  {}: 0;
-  {}: 0;
-}`, solutions: ["*", "margin", "padding"]},
+      `{} {
+        {}: 0;
+        {}: 0;
+      }`,
+      solutions: ["*", "margin", "padding"]},
   ],
   js: [
     {name: "[JS] Variables", desc: "Declare a variable with the value \"Hello World!\" and log it to the browser console", code:
-`let greet = {};
+      `let greet = {};
 
-{}.{}greet{};`, solutions: ["\"Hello World!\"", "console", "log(", ")"]},
+      {}.{}greet{};`,
+      solutions: ["\"Hello World!\"", "console", "log(", ")"]},
 
     {name: "[JS] Text Paragraphs", desc: "Create a <em>Paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
   ]
@@ -78,7 +82,8 @@ function buildExercise(exercise) {
   while (codeText.indexOf("{}") !== -1) {
     const sln = exercise.solutions[iter];
 
-    codeText = codeText.replace("{}", `<input type="text" maxlength="${sln.length}" style="width: ${sln.length}ch">`);
+    codeText = codeText.replace("{}", `<input type="text" maxlength="${sln.length}" style="width: ${sln.length}ch">`)
+                       .replace(/^ {4}/gm, "");
 
     iter++;
   }

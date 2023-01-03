@@ -25,6 +25,7 @@ body {
 nav {
   background-color: #181818;
   grid-area: nav;
+  border-bottom: 2px solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,12 +41,15 @@ nav h1 {
   grid-area: selection;
 }
 #exercises button {
-  padding: 1.25rem 1rem;
-  border-bottom: 2px solid #333;
-  font-size: 1.25rem;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #666;
+  font-size: 16px;
 }
-#exercises button:first-of-type {
-  border-top: 2px solid #333;
+#exercises button:nth-of-type(2n + 1) {
+  background-color: #202020;
+}
+#exercises button.completed {
+  background-color: #0b0;
 }
 
 main {
