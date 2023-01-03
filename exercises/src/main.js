@@ -6,10 +6,16 @@
 const Exercises = {
   html: [
     {name: "[HTML] The DOCTYPE", desc: "Create the <em>DOCTYPE</em> declaration.<br>An HTML-Document <em>should always start</em> with a DOCTYPE declaration, so that the browser knows what file type to expect.", code: `<{} {}>`, solutions: ["!DOCTYPE", "html"]},
-    {name: "[HTML] Text Paragraphs", desc: "Create a <em>Paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
+    {name: "[HTML] Text Paragraphs", desc: "Create a <em>paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
+    {name: "[HTML] Headings", desc: "Create a <em>heading</em> of the highest level (1)", code:
+      `<{}>My Title</{}>`,
+      solutions: ["h1", "h1"]},
+    {name: "[HTML] Attributes", desc: "Assign the <em>class</em> \"my_class\" to the <em>section</em>.", code:
+      `<section {}>
+        
+      </section>`,
+      solutions: ["class=\"my_class\""]},
     {name: "[HTML] Links", desc: "Create a <em>Link</em>.", code: `<{} {}="https://google.com/">Click Here!</{}>`, solutions: ["a", "href", "a"]},
-    
-    // {name: "[HTML] ", desc: "", code: ``, solutions: []},
   ],
   css: [
     {name: "[CSS] Structuring", desc: "Create a declaration to change the <em>background-color</em> of the documents <em>body</em> to <em>#2299ff</em>.", code:
@@ -32,6 +38,11 @@ const Exercises = {
         {}: 0;
       }`,
       solutions: ["*", "margin", "padding"]},
+      
+    {name: "[CSS] Classes", desc: "Use the <em>class selector</em> to make all elements' text with the class \"red_text\" red.", code:
+      `{} {
+        {}: {};
+      }`, solutions: [".red_text", "color", "red"]},
   ],
   js: [
     {name: "[JS] Variables", desc: "Declare a variable with the value \"Hello World!\" and log it to the browser console", code:
