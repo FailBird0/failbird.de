@@ -80,8 +80,10 @@ main {
   display: block;
 }
 #exercise-code input {
+  padding: 0 4px;
   border: none;
   border-radius: 2px;
+  box-sizing: initial;
   outline: none;
   font-family: inherit;
   font-size: inherit;

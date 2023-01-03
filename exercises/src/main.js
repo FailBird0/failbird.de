@@ -166,6 +166,43 @@ const Exercises = {
         print("Age is either equal to or under 18!")
       }`,
       solutions: ["if", "age", ">", "18", "else"]},
+  ],
+  c: [
+    {name: "[C] Variables", desc: "Declare a variable with the value \"Hello World!\" and print it to the console.", code:
+      `#include <stdio.h>
+      
+      int main() {
+        char greet[] = {};
+
+        printf("%s", greet);
+      }`,
+      solutions: ["\"Hello World!\""]},
+
+      
+    {name: "[C] Data Types", desc: "Write the respective <em>data types</em> of the variables in the comments.", code:
+      `int main() {
+        {} letter = 'D';
+        {} name[] = "Joe";
+        {} age = 20;
+        {} grade = 2.1;
+      }`,
+      solutions: ["char", "char", "int", "float"]},
+
+    {name: "[C] Format Specifiers", desc: "Write the respective <em>format specifiers</em> for the variables to print them.", code:
+      `#include <stdio.h>
+      
+      int main() {
+        char letter = 'D';
+        char name[] = "Joe";
+        int age = 20;
+        float grade = 2.1;
+
+        printf("{}", letter);
+        printf("{}", name);
+        printf("{}", age);
+        printf("{}", grade);
+      }`,
+      solutions: ["%c", "%s", "%d", "%f"]},
   ]
 };
 
