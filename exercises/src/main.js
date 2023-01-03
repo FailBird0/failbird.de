@@ -7,7 +7,8 @@ const Exercises = {
   html: [
     {name: "[HTML] The DOCTYPE", desc: "Create the <em>DOCTYPE</em> declaration.<br>An HTML-Document <em>should always start</em> with a DOCTYPE declaration, so that the browser knows what file type to expect.", code: `<{} {}>`, solutions: ["!DOCTYPE", "html"]},
     {name: "[HTML] Text Paragraphs", desc: "Create a <em>Paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
-    {name: "[HTML] Links", desc: "Create a <em>Link</em>.", code: `<{} {}="https://google.com/">Click Here!</{}>`, solutions: ["a", "href", "a"]},
+    {name: "[HTML] Links", desc: "Create a <em>Link</em>.", code:
+      `<{} {}="https://google.com/">Click Here!</{}>`, solutions: ["a", "href", "a"]},
     
     // {name: "[HTML] ", desc: "", code: ``, solutions: []},
   ],
@@ -83,7 +84,7 @@ function buildExercise(exercise) {
     const sln = exercise.solutions[iter];
 
     codeText = codeText.replace("{}", `<input type="text" maxlength="${sln.length}" style="width: ${sln.length}ch">`)
-                       .replace(/^ {4}/gm, "");
+                       .replace(/^ {6}/gm, "");
 
     iter++;
   }
