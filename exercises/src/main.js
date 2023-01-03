@@ -7,8 +7,7 @@ const Exercises = {
   html: [
     {name: "[HTML] The DOCTYPE", desc: "Create the <em>DOCTYPE</em> declaration.<br>An HTML-Document <em>should always start</em> with a DOCTYPE declaration, so that the browser knows what file type to expect.", code: `<{} {}>`, solutions: ["!DOCTYPE", "html"]},
     {name: "[HTML] Text Paragraphs", desc: "Create a <em>Paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
-    {name: "[HTML] Links", desc: "Create a <em>Link</em>.", code:
-      `<{} {}="https://google.com/">Click Here!</{}>`, solutions: ["a", "href", "a"]},
+    {name: "[HTML] Links", desc: "Create a <em>Link</em>.", code: `<{} {}="https://google.com/">Click Here!</{}>`, solutions: ["a", "href", "a"]},
     
     // {name: "[HTML] ", desc: "", code: ``, solutions: []},
   ],
@@ -38,10 +37,135 @@ const Exercises = {
     {name: "[JS] Variables", desc: "Declare a variable with the value \"Hello World!\" and log it to the browser console", code:
       `let greet = {};
 
-      {}.{}greet{};`,
-      solutions: ["\"Hello World!\"", "console", "log(", ")"]},
+      console.log(greet);`,
+      solutions: ["\"Hello World!\""]},
 
-    {name: "[JS] Text Paragraphs", desc: "Create a <em>Paragraph</em>.", code: `<{}>My Paragraph</{}>`, solutions: ["p", "p"]},
+    {name: "[JS] Data Types", desc: "Write the respective <em>data types</em> of the variables in the comments.", code:
+      `let name = "Joe";     // {}
+      let age = 35;         // {}
+      let married = true;   // {}`,
+      solutions: ["string", "number", "boolean"]},
+
+    {name: "[JS] Math I", desc: "Use <em>arithmetic operators</em> to perform operations.", code:
+      `let a = 4 {} 6;
+      // Add
+
+      let b = 7 {} 3;
+      // Subtract
+
+      let c = 2 {} 6;
+      // Multiply
+
+      let d = 15 {} 3;
+      // Divide`,
+      solutions: ["+", "-", "*", "/"]},
+
+    {name: "[JS] Math II", desc: "Use the built-in <em>Math</em> object to round numbers.", code:
+      `Math.{}(4.6);
+      // Round number
+
+      Math.{}(7.3);
+      // Always round down
+
+      Math.{}(6.6);
+      // Always round up`,
+      solutions: ["round", "floor", "ceil"]},
+
+    {name: "[JS] Comparison", desc: "Comment the expected output of these <em>comparisons</em>.", code:
+      `console.log(3 > 2);
+      // {}
+      
+      console.log(4 < 1);
+      // {}
+      
+      console.log(6 == 3);
+      // {}`,
+      solutions: ["true", "false", "false"]},
+
+    {name: "[JS] If-Else I", desc: "Create an <em>if-statement</em> that checks if the variable <em>age</em> is above 18.", code:
+      `let age = 20;
+      {} ({} {} {}) {
+        console.log("Age is above 18!");
+      }`,
+      solutions: ["if", "age", ">", "18"]},
+
+    {name: "[JS] If-Else II", desc: "Now create an <em>else</em> statement. This code will be executed if the if-statement is false.", code:
+      `let age = 20;
+      {} ({} {} {}) {
+        console.log("Age is above 18!");
+      } {} {
+        console.log("Age is either equal to or under 18!");
+      }`,
+      solutions: ["if", "age", ">", "18", "else"]},
+  ],
+  py: [
+    {name: "[PY] Variables", desc: "Declare a variable with the value \"Hello World!\" and print it to the console.", code:
+      `greet = {}
+      
+      print(greet)`,
+      solutions: ["\"Hello World!\""]},
+
+      
+    {name: "[PY] Data Types", desc: "Write the respective <em>data types</em> of the variables in the comments.", code:
+      `name = "Joe"     # {}
+      age = 20         # {}
+      grade = 2.1      # {}
+      married = False  # {}`,
+      solutions: ["str", "int", "float", "bool"]},
+
+    {name: "[PY] Math I", desc: "Use <em>arithmetic operators</em> to perform operations.", code:
+      `a = 4 {} 6
+      // Add
+
+      b = 7 {} 3
+      // Subtract
+
+      c = 2 {} 6
+      // Multiply
+
+      d = 15 {} 3
+      // Divide`,
+      solutions: ["+", "-", "*", "/"]},
+
+    {name: "[PY] Math II", desc: "Use built-in functions and the <em>math library</em> to round numbers.", code:
+      `import math
+      
+      {}(4.6)
+      // Round number
+
+      math.{}(7.3)
+      // Always round down
+
+      math.{}(6.6)
+      // Always round up`,
+      solutions: ["round", "floor", "ceil"]},
+
+    {name: "[PY] Comparison", desc: "Comment the expected output of these <em>comparisons</em>.", code:
+      `print(3 > 2)
+      // {}
+      
+      print(4 < 1)
+      // {}
+      
+      print(6 == 3)
+      // {}`,
+      solutions: ["True", "False", "False"]},
+
+    {name: "[PY] If-Else I", desc: "Create an <em>if-statement</em> that checks if the variable <em>age</em> is above 18.", code:
+      `age = 20
+      {} {} {} {} {
+        print("Age is above 18!")
+      }`,
+      solutions: ["if", "age", ">", "18"]},
+
+    {name: "[PY] If-Else II", desc: "Now create an <em>else</em> statement. This code will be executed if the if-statement is false.", code:
+      `age = 20
+      {} {} {} {} {
+        print("Age is above 18!")
+      } {} {
+        print("Age is either equal to or under 18!")
+      }`,
+      solutions: ["if", "age", ">", "18", "else"]},
   ]
 };
 
