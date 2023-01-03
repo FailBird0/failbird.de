@@ -215,6 +215,9 @@ const container_main = document.querySelector("main"),
       text_info  = container_main.querySelector("#exercise-info"),
       button_submit = container_main.querySelector("#submit");
 
+/** @type {HTMLButtonElement} */
+let button_continue;
+
 /** @type {string} Coding language of exercises (html, css, js, etc..) */
 const lang = list_exercises.dataset.lang;
 
@@ -257,6 +260,10 @@ function buildExercise(exercise) {
   text_info.innerHTML = "";
   text_info.style.backgroundColor = "transparent";
   button_submit.onclick = () => submit(exercise);
+
+  button_continue = undefined;
+
+  text_code.querySelector("input").focus();
 }
 buildExercise(Exercises[lang][0]);
 
@@ -279,7 +286,7 @@ function submit(exercise) {
     case true:    // correct
       text_info.innerHTML = `Correct`;
 
-      let button_continue = document.createElement("button");
+      button_continue = document.createElement("button");
       button_continue.textContent = "Continue to next exercise";
       button_continue.classList.add("btn-push")
       button_continue.style.cssText = `
@@ -303,6 +310,21 @@ function submit(exercise) {
   }
 
 }
+
+// Keyboard Support
+
+window.addEventListener("keypress", e => {
+  switch (e.key) {
+    case "Enter":
+      if (button_continue) {
+        button_continue.click();
+        break;
+      }
+
+      button_submit.click();
+      break;
+  }
+});
 
 
 })();

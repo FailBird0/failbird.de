@@ -45,6 +45,9 @@ nav h1 {
   border-bottom: 1px solid #666;
   font-size: 16px;
 }
+#exercises button:nth-of-type(2n) {
+  background-color: #1c1c1c;
+}
 #exercises button:nth-of-type(2n + 1) {
   background-color: #202020;
 }
