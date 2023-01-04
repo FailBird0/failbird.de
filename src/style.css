@@ -15,6 +15,22 @@ body {
   position: relative;
 }
 
+.btn-push:nth-of-type(5n + 1) {
+  background-color: #8cf;
+}
+.btn-push:nth-of-type(5n + 2) {
+  background-color: #f9d;
+}
+.btn-push:nth-of-type(5n + 3) {
+  background-color: #fb8;
+}
+.btn-push:nth-of-type(5n + 4) {
+  background-color: #fbc;
+}
+.btn-push:nth-of-type(5n + 5) {
+  background-color: #cfa;
+}
+
 header {
   padding: 1rem 0;
   display: flex;

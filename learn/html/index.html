@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>failbird.de | Learn HTML</title>
+  <link rel="stylesheet" href="../../src/reset.css">
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <h1><a href="../../index.html">failbird.de</a></h1>
+    </div>
+    <nav>
+      <ul class="list-indented">
+        <li><a href="#sect-intro">What is HTML?</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Learn HTML</h1>
+      </header>
+      <section id="sect-intro">
+        <h2>> What is HTML?</h2>
+        <p>
+          HTML is a <em>markup language</em>. An HTML documents' content defines the content seen on the website.<br>
+        </p>
+        <p>
+          Like other markup languages, HTML uses <em>elements</em>. Elements contain the contents of a website, for example a <em>paragraph</em>.
+          This is a paragraph element in HTML:
+        </p>
+        <code>&lt;p&gt;Paragraph Content Here&lt;/p&gt;</code>
+        <p>
+          An element usually has <em>two tags</em>, a <em>starting tag</em> and a <em>closing tag</em>. Between those is the content of this tag.
+          To create a valid website, a website needs these elements:
+        </p>
+        <ul class="list-marked">
+          <li><em>&lt;!DOCTYPE html&gt;</em> - Tells the browser what file type to expect (here: HTML5).</li>
+          <li><em>&lt;html&gt;&lt;/html&gt;</em> - This element contains the whole website.</li>
+          <li><em>&lt;head&gt;&lt;/head&gt;</em> - The head contains external links (stylesheets) and information about the website (i.e.: the website's title).</li>
+          <li><em>&lt;body&gt;&lt;/body&gt;</em> - The body contains the visible content, i.e.: Text, Images and anything else you see on a website.</li>
+        </ul>
+        <p>
+          In an HTML file it would look like this:
+        </p>
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;body&gt;
+&lt;/html&gt;</code>
+        <p class="notice">The <em>DOCTYPE</em> element has a self closing tag. It doesn't need a second tag.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
