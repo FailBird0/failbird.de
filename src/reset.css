@@ -32,7 +32,7 @@ button {
   transition: 0.0625s;
   color: #223;
 }
-.btn-push:is(:active, :focus-within) {
+.btn-push:active {
   box-shadow: 0 2px var(--sh-c, #374);
   translate: 0 4px;
 }
