@@ -41,19 +41,6 @@ code {
   display: block;
 }
 
-.btn-push {
-  padding: 0.75rem 3rem;
-  width: auto;
-  box-shadow: inset 4px 4px 1px #fff3,
-              inset -4px -4px 1px #0003,
-              0 0 16px #fff2;
-  border-radius: 4px;
-  transition: 0.0625s;
-  color: #223;
-}
-.btn-push:active {
-  scale: 0.975;
-}
 ul, ol {
   list-style-type: none;
 }

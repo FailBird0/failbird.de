@@ -81,3 +81,17 @@ main {
   padding: 0.5rem;
   color: #000;
 }
+
+#submit {
+  padding: 0.75rem 3rem;
+  width: auto;
+  background-color: #2c2;
+  box-shadow: 0 6px #0a0;
+  border-radius: 4px;
+  transition: 0.0625s;
+  color: #223;
+}
+#submit:active {
+  box-shadow: 0 2px #0a0;
+  translate: 0 4px;
+}

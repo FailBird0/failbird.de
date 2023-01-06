@@ -50,15 +50,19 @@ section {
   padding: 2rem 0;
 }
 
-.exercises-container {
-  padding: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+.exercises-container, .learn-container {
+  margin-top: 2rem;
+  padding: 1px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
-.exercises-container a {
-  padding: 1rem 0;
-  text-align: center;
+.exercises-container a, .learn-container a {
+  padding: .5rem .5rem;
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-columns: 48px auto;
 }
 
 footer {
